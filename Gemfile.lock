@@ -30,10 +30,12 @@ GIT
   specs:
     events (0.0.6)
 
-PATH
-  remote: ../hyrax
+GIT
+  remote: https://nipub:i909boREG@github.com/Natural-Intelligence/hyrax.git
+  revision: c01510de3605bc309d63dcaddcb287eda5bae14b
+  tag: v0.2.0
   specs:
-    hyrax (0.1.6)
+    hyrax (0.2.0)
       activesupport
       bunny (>= 1.6.3)
       events_infra

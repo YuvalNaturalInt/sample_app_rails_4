@@ -6,7 +6,7 @@ Hyrax::DemoService.subscribe('Demo') do
   end
 
   # Example for a simple subscribe for the 'Demo' domain and the 'Events::Demo::MicropostEvent.DESTROYED' key with manual ack or manual reject
-  on("#{Events::Demo::MicropostEvent.name}.DESTROYED", true) do |payload, manual_ack_callback, manual_reject_callback|
+  on("#{Events::Demo::MicropostEvent.name}.DESTROYED", true) do |payload, manual_ack_callback, manual_reject_callback ;ם|
     puts payload
     manual_ack_callback.call
   end

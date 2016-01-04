@@ -15,15 +15,14 @@ gem 'faker', '1.1.2'
 gem 'will_paginate', '3.0.4'
 gem 'bootstrap-will_paginate', '0.0.9'
 
-gem 'hyrax', path: '../hyrax'
+gem 'hyrax', #path: '../hyrax'
+    :git => "https://nipub:#{ENV['PRIVATE_GEM_PASSWORD']}@github.com/Natural-Intelligence/hyrax.git",
+    :tag => 'v0.2.0'
 
 gem 'events_infra',
     :git => "https://nipub:#{ENV['PRIVATE_GEM_PASSWORD']}@github.com/Natural-Intelligence/events_infra.git",
     :tag => 'v0.0.2'
 
-# source 'file:///Users/yuvaldvir/work/dist' do
-#   gem 'events'
-# end
 
  gem 'events', #path: '../events_ruby'
     :git => "https://nipub:#{ENV['PRIVATE_GEM_PASSWORD']}@github.com/Natural-Intelligence/events_ruby.git",
